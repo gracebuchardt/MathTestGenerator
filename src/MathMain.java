@@ -2,14 +2,23 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
+//I'm pretty sure I'm not using random properly here, and that the random variable is being used incorrectly. Will update accordingly. 
 
 public class MathMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in=new Scanner(System.in);
-		Random 1qu1=new Random();
-		Random 1qu2=new Random();
+		Random qu1a=new Random();
+		Random qu2a=new Random();
+		int answer1 = 0;
+		int true1 = 0;
+		
+		Random qu1b=new Random();
+		Random qu2b=new Random();
+		int answer2 = 0;
+		int true2 = 0;
+		
 		
 		int diff = 0;
 		//Difficulty.
@@ -26,9 +35,16 @@ public class MathMain {
 		//It then prints out your score (variable). And maybe a nice message.
 		
 			if (diff==1) {
-				System.out.print("What is "+(1qu1.nextInt((25-1)+1)+1));
-				System.out.println("+"+(1qu2.nextInt((25-1)+1)+1)+"?");
+				System.out.print("What is "+(qu1a.nextInt((25-1)+1)+1));
+				System.out.println(" + "+(qu2a.nextInt((25-1)+1)+1)+"?");
+				answer1=in.nextInt();
+				
+				System.out.print("What is "+(qu1b.nextInt((25-1)+1)+1));
+				System.out.println(" + "+(qu2b.nextInt((25-1)+1)+1)+"?");
+				answer2=in.nextInt();
 			}
+			
+			
 			
 			
 			
